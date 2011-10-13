@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB004D211446734600CF281E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB004D201446734600CF281E /* UIKit.framework */; };
+		EB004D231446734600CF281E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB004D221446734600CF281E /* Foundation.framework */; };
+		EB004D251446734600CF281E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB004D241446734600CF281E /* CoreGraphics.framework */; };
+		EB004D2B1446734600CF281E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB004D291446734600CF281E /* InfoPlist.strings */; };
+		EB004D2D1446734600CF281E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004D2C1446734600CF281E /* main.m */; };
+		EB004D311446734600CF281E /* MafiosoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004D301446734600CF281E /* MafiosoAppDelegate.m */; };
+		EB004D341446734600CF281E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB004D321446734600CF281E /* MainWindow.xib */; };
+		EB004D371446734600CF281E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004D361446734600CF281E /* RootViewController.m */; };
+		EB004D3A1446734600CF281E /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB004D381446734600CF281E /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB004D1C1446734600CF281E /* Mafioso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mafioso.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB004D201446734600CF281E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB004D221446734600CF281E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB004D241446734600CF281E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB004D281446734600CF281E /* Mafioso-Info.plist */ = {isa = PBXFileReference; path = "Mafioso-Info.plist"; sourceTree = "<group>"; };
+		EB004D2A1446734600CF281E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB004D2C1446734600CF281E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB004D2E1446734600CF281E /* Mafioso-Prefix.pch */ = {isa = PBXFileReference; path = "Mafioso-Prefix.pch"; sourceTree = "<group>"; };
+		EB004D2F1446734600CF281E /* MafiosoAppDelegate.h */ = {isa = PBXFileReference; path = MafiosoAppDelegate.h; sourceTree = "<group>"; };
+		EB004D301446734600CF281E /* MafiosoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MafiosoAppDelegate.m; sourceTree = "<group>"; };
+		EB004D331446734600CF281E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		EB004D351446734600CF281E /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		EB004D361446734600CF281E /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		EB004D391446734600CF281E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB004D191446734600CF281E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB004D211446734600CF281E /* UIKit.framework in Frameworks */,
+				EB004D231446734600CF281E /* Foundation.framework in Frameworks */,
+				EB004D251446734600CF281E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB004D111446734600CF281E = {
+			isa = PBXGroup;
+			children = (
+				EB004D261446734600CF281E /* Mafioso */,
+				EB004D1F1446734600CF281E /* Frameworks */,
+				EB004D1D1446734600CF281E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB004D1D1446734600CF281E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB004D1C1446734600CF281E /* Mafioso.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB004D1F1446734600CF281E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB004D201446734600CF281E /* UIKit.framework */,
+				EB004D221446734600CF281E /* Foundation.framework */,
+				EB004D241446734600CF281E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB004D261446734600CF281E /* Mafioso */ = {
+			isa = PBXGroup;
+			children = (
+				EB004D2F1446734600CF281E /* MafiosoAppDelegate.h */,
+				EB004D301446734600CF281E /* MafiosoAppDelegate.m */,
+				EB004D321446734600CF281E /* MainWindow.xib */,
+				EB004D351446734600CF281E /* RootViewController.h */,
+				EB004D361446734600CF281E /* RootViewController.m */,
+				EB004D381446734600CF281E /* RootViewController.xib */,
+				EB004D271446734600CF281E /* Supporting Files */,
+			);
+			path = Mafioso;
+			sourceTree = "<group>";
+		};
+		EB004D271446734600CF281E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB004D281446734600CF281E /* Mafioso-Info.plist */,
+				EB004D291446734600CF281E /* InfoPlist.strings */,
+				EB004D2C1446734600CF281E /* main.m */,
+				EB004D2E1446734600CF281E /* Mafioso-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB004D1B1446734600CF281E /* Mafioso */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB004D3D1446734600CF281E /* Build configuration list for PBXNativeTarget "Mafioso" */;
+			buildPhases = (
+				EB004D181446734600CF281E /* Sources */,
+				EB004D191446734600CF281E /* Frameworks */,
+				EB004D1A1446734600CF281E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mafioso;
+			productName = Mafioso;
+			productReference = EB004D1C1446734600CF281E /* Mafioso.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB004D131446734600CF281E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EB004D161446734600CF281E /* Build configuration list for PBXProject "Mafioso" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB004D111446734600CF281E;
+			productRefGroup = EB004D1D1446734600CF281E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB004D1B1446734600CF281E /* Mafioso */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB004D1A1446734600CF281E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB004D2B1446734600CF281E /* InfoPlist.strings in Resources */,
+				EB004D341446734600CF281E /* MainWindow.xib in Resources */,
+				EB004D3A1446734600CF281E /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB004D181446734600CF281E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB004D2D1446734600CF281E /* main.m in Sources */,
+				EB004D311446734600CF281E /* MafiosoAppDelegate.m in Sources */,
+				EB004D371446734600CF281E /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB004D291446734600CF281E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB004D2A1446734600CF281E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB004D321446734600CF281E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB004D331446734600CF281E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		EB004D381446734600CF281E /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB004D391446734600CF281E /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB004D3B1446734600CF281E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB004D3C1446734600CF281E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB004D3E1446734600CF281E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mafioso/Mafioso-Prefix.pch";
+				INFOPLIST_FILE = "Mafioso/Mafioso-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB004D3F1446734600CF281E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mafioso/Mafioso-Prefix.pch";
+				INFOPLIST_FILE = "Mafioso/Mafioso-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB004D161446734600CF281E /* Build configuration list for PBXProject "Mafioso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB004D3B1446734600CF281E /* Debug */,
+				EB004D3C1446734600CF281E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB004D3D1446734600CF281E /* Build configuration list for PBXNativeTarget "Mafioso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB004D3E1446734600CF281E /* Debug */,
+				EB004D3F1446734600CF281E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB004D131446734600CF281E /* Project object */;
+}
