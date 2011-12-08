@@ -16,6 +16,21 @@
 		EB004D341446734600CF281E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB004D321446734600CF281E /* MainWindow.xib */; };
 		EB004D371446734600CF281E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004D361446734600CF281E /* RootViewController.m */; };
 		EB004D3A1446734600CF281E /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB004D381446734600CF281E /* RootViewController.xib */; };
+		EB004D4A144695E400CF281E /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004D48144695E400CF281E /* SetupViewController.m */; };
+		EB004D4B144695E400CF281E /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB004D49144695E400CF281E /* SetupViewController.xib */; };
+		EB004D4F144695F700CF281E /* JogadorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004D4D144695F700CF281E /* JogadorViewController.m */; };
+		EB004D50144695F700CF281E /* JogadorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB004D4E144695F700CF281E /* JogadorViewController.xib */; };
+		EB004D541446961100CF281E /* FimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB004D521446961100CF281E /* FimViewController.m */; };
+		EB004D551446961100CF281E /* FimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB004D531446961100CF281E /* FimViewController.xib */; };
+		EBC707AE1446F69000ACB239 /* City Night.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC707AD1446F69000ACB239 /* City Night.png */; };
+		EBC707B71447B03D00ACB239 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC707B61447B03D00ACB239 /* Logo.png */; };
+		EBC707B91447B12400ACB239 /* Logo@114.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC707B81447B12400ACB239 /* Logo@114.png */; };
+		EBC707BB1447B9CF00ACB239 /* Logo@57.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC707BA1447B9CF00ACB239 /* Logo@57.png */; };
+		EBF276FA144779C5009C286F /* Wiki_Cidade_Dorme.html in Resources */ = {isa = PBXBuildFile; fileRef = EBF276F9144779C5009C286F /* Wiki_Cidade_Dorme.html */; };
+		EBF276FF14477B81009C286F /* InstrucoesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF276FD14477B81009C286F /* InstrucoesViewController.m */; };
+		EBF2770014477B81009C286F /* InstrucoesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF276FE14477B81009C286F /* InstrucoesViewController.xib */; };
+		EBF27704144785FE009C286F /* CreditosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF27702144785FE009C286F /* CreditosViewController.m */; };
+		EBF27705144785FE009C286F /* CreditosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF27703144785FE009C286F /* CreditosViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +38,38 @@
 		EB004D201446734600CF281E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EB004D221446734600CF281E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB004D241446734600CF281E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EB004D281446734600CF281E /* Mafioso-Info.plist */ = {isa = PBXFileReference; path = "Mafioso-Info.plist"; sourceTree = "<group>"; };
+		EB004D281446734600CF281E /* Mafioso-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mafioso-Info.plist"; sourceTree = "<group>"; };
 		EB004D2A1446734600CF281E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB004D2C1446734600CF281E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EB004D2E1446734600CF281E /* Mafioso-Prefix.pch */ = {isa = PBXFileReference; path = "Mafioso-Prefix.pch"; sourceTree = "<group>"; };
-		EB004D2F1446734600CF281E /* MafiosoAppDelegate.h */ = {isa = PBXFileReference; path = MafiosoAppDelegate.h; sourceTree = "<group>"; };
+		EB004D2E1446734600CF281E /* Mafioso-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mafioso-Prefix.pch"; sourceTree = "<group>"; };
+		EB004D2F1446734600CF281E /* MafiosoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MafiosoAppDelegate.h; sourceTree = "<group>"; };
 		EB004D301446734600CF281E /* MafiosoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MafiosoAppDelegate.m; sourceTree = "<group>"; };
 		EB004D331446734600CF281E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		EB004D351446734600CF281E /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		EB004D351446734600CF281E /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		EB004D361446734600CF281E /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		EB004D391446734600CF281E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		EB004D47144695E400CF281E /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetupViewController.h; path = ../SetupViewController.h; sourceTree = "<group>"; };
+		EB004D48144695E400CF281E /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetupViewController.m; path = ../SetupViewController.m; sourceTree = "<group>"; };
+		EB004D49144695E400CF281E /* SetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SetupViewController.xib; path = ../SetupViewController.xib; sourceTree = "<group>"; };
+		EB004D4C144695F700CF281E /* JogadorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JogadorViewController.h; path = ../JogadorViewController.h; sourceTree = "<group>"; };
+		EB004D4D144695F700CF281E /* JogadorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JogadorViewController.m; path = ../JogadorViewController.m; sourceTree = "<group>"; };
+		EB004D4E144695F700CF281E /* JogadorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JogadorViewController.xib; path = ../JogadorViewController.xib; sourceTree = "<group>"; };
+		EB004D511446961100CF281E /* FimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FimViewController.h; path = ../FimViewController.h; sourceTree = "<group>"; };
+		EB004D521446961100CF281E /* FimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FimViewController.m; path = ../FimViewController.m; sourceTree = "<group>"; };
+		EB004D531446961100CF281E /* FimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FimViewController.xib; path = ../FimViewController.xib; sourceTree = "<group>"; };
+		EB004D5814469A9200CF281E /* Constantes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constantes.h; sourceTree = "<group>"; };
+		EB004D5914469A9200CF281E /* Protocolos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protocolos.h; sourceTree = "<group>"; };
+		EBC707AD1446F69000ACB239 /* City Night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "City Night.png"; sourceTree = SOURCE_ROOT; };
+		EBC707B61447B03D00ACB239 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = SOURCE_ROOT; };
+		EBC707B81447B12400ACB239 /* Logo@114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@114.png"; sourceTree = SOURCE_ROOT; };
+		EBC707BA1447B9CF00ACB239 /* Logo@57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@57.png"; sourceTree = SOURCE_ROOT; };
+		EBF276F9144779C5009C286F /* Wiki_Cidade_Dorme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Wiki_Cidade_Dorme.html; sourceTree = "<group>"; };
+		EBF276FC14477B81009C286F /* InstrucoesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrucoesViewController.h; sourceTree = "<group>"; };
+		EBF276FD14477B81009C286F /* InstrucoesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrucoesViewController.m; sourceTree = "<group>"; };
+		EBF276FE14477B81009C286F /* InstrucoesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstrucoesViewController.xib; sourceTree = "<group>"; };
+		EBF27701144785FE009C286F /* CreditosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditosViewController.h; sourceTree = "<group>"; };
+		EBF27702144785FE009C286F /* CreditosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditosViewController.m; sourceTree = "<group>"; };
+		EBF27703144785FE009C286F /* CreditosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditosViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +116,8 @@
 		EB004D261446734600CF281E /* Mafioso */ = {
 			isa = PBXGroup;
 			children = (
-				EB004D2F1446734600CF281E /* MafiosoAppDelegate.h */,
-				EB004D301446734600CF281E /* MafiosoAppDelegate.m */,
-				EB004D321446734600CF281E /* MainWindow.xib */,
-				EB004D351446734600CF281E /* RootViewController.h */,
-				EB004D361446734600CF281E /* RootViewController.m */,
-				EB004D381446734600CF281E /* RootViewController.xib */,
+				EB004D571446965900CF281E /* Classes */,
+				EB004D561446963600CF281E /* Interfaces */,
 				EB004D271446734600CF281E /* Supporting Files */,
 			);
 			path = Mafioso;
@@ -93,12 +126,54 @@
 		EB004D271446734600CF281E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EBC707B81447B12400ACB239 /* Logo@114.png */,
+				EBC707BA1447B9CF00ACB239 /* Logo@57.png */,
+				EBC707B61447B03D00ACB239 /* Logo.png */,
+				EBF276F9144779C5009C286F /* Wiki_Cidade_Dorme.html */,
+				EBC707AD1446F69000ACB239 /* City Night.png */,
 				EB004D281446734600CF281E /* Mafioso-Info.plist */,
 				EB004D291446734600CF281E /* InfoPlist.strings */,
 				EB004D2C1446734600CF281E /* main.m */,
 				EB004D2E1446734600CF281E /* Mafioso-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB004D561446963600CF281E /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				EB004D321446734600CF281E /* MainWindow.xib */,
+				EB004D381446734600CF281E /* RootViewController.xib */,
+				EBF276FE14477B81009C286F /* InstrucoesViewController.xib */,
+				EBF27703144785FE009C286F /* CreditosViewController.xib */,
+				EB004D49144695E400CF281E /* SetupViewController.xib */,
+				EB004D4E144695F700CF281E /* JogadorViewController.xib */,
+				EB004D531446961100CF281E /* FimViewController.xib */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		EB004D571446965900CF281E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EB004D5814469A9200CF281E /* Constantes.h */,
+				EB004D5914469A9200CF281E /* Protocolos.h */,
+				EB004D2F1446734600CF281E /* MafiosoAppDelegate.h */,
+				EB004D301446734600CF281E /* MafiosoAppDelegate.m */,
+				EB004D351446734600CF281E /* RootViewController.h */,
+				EB004D361446734600CF281E /* RootViewController.m */,
+				EBF276FC14477B81009C286F /* InstrucoesViewController.h */,
+				EBF276FD14477B81009C286F /* InstrucoesViewController.m */,
+				EBF27701144785FE009C286F /* CreditosViewController.h */,
+				EBF27702144785FE009C286F /* CreditosViewController.m */,
+				EB004D47144695E400CF281E /* SetupViewController.h */,
+				EB004D48144695E400CF281E /* SetupViewController.m */,
+				EB004D4C144695F700CF281E /* JogadorViewController.h */,
+				EB004D4D144695F700CF281E /* JogadorViewController.m */,
+				EB004D511446961100CF281E /* FimViewController.h */,
+				EB004D521446961100CF281E /* FimViewController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +226,16 @@
 				EB004D2B1446734600CF281E /* InfoPlist.strings in Resources */,
 				EB004D341446734600CF281E /* MainWindow.xib in Resources */,
 				EB004D3A1446734600CF281E /* RootViewController.xib in Resources */,
+				EB004D4B144695E400CF281E /* SetupViewController.xib in Resources */,
+				EB004D50144695F700CF281E /* JogadorViewController.xib in Resources */,
+				EB004D551446961100CF281E /* FimViewController.xib in Resources */,
+				EBC707AE1446F69000ACB239 /* City Night.png in Resources */,
+				EBF276FA144779C5009C286F /* Wiki_Cidade_Dorme.html in Resources */,
+				EBF2770014477B81009C286F /* InstrucoesViewController.xib in Resources */,
+				EBF27705144785FE009C286F /* CreditosViewController.xib in Resources */,
+				EBC707B71447B03D00ACB239 /* Logo.png in Resources */,
+				EBC707B91447B12400ACB239 /* Logo@114.png in Resources */,
+				EBC707BB1447B9CF00ACB239 /* Logo@57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +249,11 @@
 				EB004D2D1446734600CF281E /* main.m in Sources */,
 				EB004D311446734600CF281E /* MafiosoAppDelegate.m in Sources */,
 				EB004D371446734600CF281E /* RootViewController.m in Sources */,
+				EB004D4A144695E400CF281E /* SetupViewController.m in Sources */,
+				EB004D4F144695F700CF281E /* JogadorViewController.m in Sources */,
+				EB004D541446961100CF281E /* FimViewController.m in Sources */,
+				EBF276FF14477B81009C286F /* InstrucoesViewController.m in Sources */,
+				EBF27704144785FE009C286F /* CreditosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +292,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -217,6 +307,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -226,7 +317,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -235,6 +326,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -243,10 +335,13 @@
 		EB004D3E1446734600CF281E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mafioso/Mafioso-Prefix.pch";
 				INFOPLIST_FILE = "Mafioso/Mafioso-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -254,10 +349,13 @@
 		EB004D3F1446734600CF281E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mafioso/Mafioso-Prefix.pch";
 				INFOPLIST_FILE = "Mafioso/Mafioso-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -281,6 +379,7 @@
 				EB004D3F1446734600CF281E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

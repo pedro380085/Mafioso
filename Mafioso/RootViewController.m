@@ -18,6 +18,8 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [self.navigationController setNavigationBarHidden:YES];
+    [bloqueio setAlpha:0.0];
     [super viewWillAppear:animated];
 }
 
@@ -36,6 +38,67 @@
 	[super viewDidDisappear:animated];
 }
 
+- (void)definirAlpha:(float)alpha {
+    if (alpha == 0.0) {
+        self.view.backgroundColor = [UIColor whiteColor];
+    } else {
+        self.view.backgroundColor = [UIColor lightGrayColor];
+    }
+    
+    titulo.alpha = 0.0;
+    novoJogo.alpha = 0.0;
+    instrucoes.alpha = 0.0;
+    creditos.alpha = 0.0;
+}
+
+
+- (IBAction)tituloTocado:(id)sender {
+    if ([titulo.currentTitle isEqualToString: TITULO_1]) {
+        [titulo setTitle:TITULO_2 forState:UIControlStateNormal];
+    } else {
+        [titulo setTitle:TITULO_1 forState:UIControlStateNormal];
+    }
+}
+
+- (IBAction)novoJogoTocado:(id)sender {
+    [UIView animateWithDuration:ANIMACAO_TRANSICAO animations:^{
+        bloqueio.alpha = 1.0;
+    }];
+
+    [self performSelector:@selector(inserirSetupViewController) withObject:nil afterDelay:ANIMACAO_TRANSICAO];
+
+}
+
+- (IBAction)instrucoesTocado:(id)sender {
+    [UIView animateWithDuration:ANIMACAO_TRANSICAO animations:^{
+        bloqueio.alpha = 1.0;
+    } completion:^(BOOL fim) {
+        InstrucoesViewController *ivc = [[InstrucoesViewController alloc] initWithNibName:@"InstrucoesViewController" bundle:nil];
+        [self.navigationController pushViewController:ivc animated:NO];
+    }];
+}
+
+- (IBAction)creditosTocado:(id)sender {
+    [UIView animateWithDuration:ANIMACAO_TRANSICAO animations:^{
+        bloqueio.alpha = 1.0;
+    } completion:^(BOOL fim) {
+        CreditosViewController *cvc = [[CreditosViewController alloc] initWithNibName:@"CreditosViewController" bundle:nil];
+        [self.navigationController pushViewController:cvc animated:NO];
+    }];
+}
+
+- (void)inserirRootViewController {
+    bloqueio.alpha = 1.0;
+    [UIView animateWithDuration:ANIMACAO_TRANSICAO animations:^{
+        bloqueio.alpha = 0.0;
+    }];
+}
+
+- (void)inserirSetupViewController {
+    SetupViewController *svc = [[SetupViewController alloc] initWithNibName:@"SetupViewController" bundle:nil];
+    [self.navigationController pushViewController:svc animated:NO];
+}
+
 /*
  // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -43,83 +106,6 @@
 	return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
  */
-
-// Customize the number of sections in the table view.
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 0;
-}
-
-// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-
-    // Configure the cell.
-    return cell;
-}
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete)
-    {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }
-    else if (editingStyle == UITableViewCellEditingStyleInsert)
-    {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-	*/
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -141,5 +127,17 @@
 {
     [super dealloc];
 }
+
+/*
+#pragma mark - Navigation Controller Delegate
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    if (viewController == self) {
+        [self inserirRootViewController];
+    }
+    
+}
+*/
 
 @end

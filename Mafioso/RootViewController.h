@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constantes.h"
+#import "SetupViewController.h"
+#import "InstrucoesViewController.h"
+#import "CreditosViewController.h"
 
-@interface RootViewController : UITableViewController
+@interface RootViewController : UIViewController <UINavigationControllerDelegate> {
+    IBOutlet UIView *bloqueio;
+    IBOutlet UIButton *titulo;
+    IBOutlet UIButton *novoJogo;
+    IBOutlet UIButton *instrucoes;
+    IBOutlet UIButton *creditos;
+}
+
+- (IBAction)tituloTocado:(id)sender;
+- (IBAction)novoJogoTocado:(id)sender;
+- (IBAction)instrucoesTocado:(id)sender;
+- (IBAction)creditosTocado:(id)sender;
+- (void)inserirRootViewController;
+- (void)inserirSetupViewController;
 
 @end
