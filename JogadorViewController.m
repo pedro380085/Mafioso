@@ -86,6 +86,7 @@
                     FimViewController *fvc = [[FimViewController alloc] initWithNibName:@"FimViewController" bundle:nil];
                     fvc.nomes = nomes;
                     [self.navigationController pushViewController:fvc animated:NO];
+                    [fvc release];
                 }];
                 
             }

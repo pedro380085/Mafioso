@@ -75,6 +75,7 @@
     } completion:^(BOOL fim) {
         InstrucoesViewController *ivc = [[InstrucoesViewController alloc] initWithNibName:@"InstrucoesViewController" bundle:nil];
         [self.navigationController pushViewController:ivc animated:NO];
+        [ivc release];
     }];
 }
 
@@ -84,6 +85,7 @@
     } completion:^(BOOL fim) {
         CreditosViewController *cvc = [[CreditosViewController alloc] initWithNibName:@"CreditosViewController" bundle:nil];
         [self.navigationController pushViewController:cvc animated:NO];
+        [cvc release];
     }];
 }
 
@@ -97,6 +99,7 @@
 - (void)inserirSetupViewController {
     SetupViewController *svc = [[SetupViewController alloc] initWithNibName:@"SetupViewController" bundle:nil];
     [self.navigationController pushViewController:svc animated:NO];
+    [svc release];
 }
 
 /*

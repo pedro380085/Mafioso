@@ -132,6 +132,7 @@
         JogadorViewController *jvc = [[JogadorViewController alloc] initWithNibName:@"JogadorViewController" bundle:nil];
         jvc.ordem = ordem;
         [self.navigationController pushViewController:jvc animated:NO];
+        [jvc release];
     }];
 }
 
